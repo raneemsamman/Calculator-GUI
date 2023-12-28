@@ -1,5 +1,5 @@
 /**
-  * CalculatorGUI_updated.java
+  * CalculatorGUI.java
   * @description simple calculator class
   * @author R Samman
   * @version 2.0 04-04-2022
@@ -15,9 +15,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * CalculatorGUI_updated class represents a simple calculator GUI.
+ * CalculatorGUI class represents a simple calculator GUI.
  */
-public class CalculatorGUI_updated extends JPanel {
+public class CalculatorGUI extends JPanel {
 
     private JPanel buttonPanel, textPanel, headerPanel;
     private JButton buttonArray[] = new JButton[16];
@@ -223,11 +223,11 @@ public class CalculatorGUI_updated extends JPanel {
  */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("THE Calculator");
+            JFrame frame = new JFrame("My Calculator");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(580, 720);
             frame.setResizable(false);
-            frame.add(new CalculatorGUI_updated());
+            frame.add(new CalculatorGUI());
             frame.setVisible(true);
         });
     }
